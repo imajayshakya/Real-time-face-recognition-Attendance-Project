@@ -1,8 +1,10 @@
 # FaceAttendanceProject
 
 Needed 
-*\nPython 3 
+*Python 3 
+
 *facerecognition module
+
 *opencv module
 
 First Create Dataset by using dataset.py file
