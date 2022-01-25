@@ -1,7 +1,7 @@
 # FaceAttendanceProject
 
 Needed 
-*Python 3 
+*\nPython 3 
 *facerecognition module
 *opencv module
 
