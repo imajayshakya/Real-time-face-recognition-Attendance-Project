@@ -25,8 +25,11 @@ for (subdirs, dirs, files) in os.walk(datasets):
 
 
 def markattendance(name):
-	# if os.path.exists("Attendance.csv")!=True:
-	# 	f= open("guru99.txt","w+")
+	cwd = os.getcwd()
+	path = os.path.join(cwd,'Attendance.csv')
+	if not os.path.isdir(path): 
+		f = open("Attendance.csv","w+")
+		f.close()
 	with open('Attendance.csv','r+') as f:
 		mydatalist = f.readlines()
 		namelist = []

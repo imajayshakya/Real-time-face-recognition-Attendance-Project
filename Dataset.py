@@ -7,7 +7,10 @@ haar_file = 'haarcascade_frontalface_default.xml'
 # All the faces data will be 
 # present this folder 
 datasets = 'datasets'
-
+cwd = os.getcwd()
+path = os.path.join(cwd, datasets) 
+if not os.path.isdir(path): 
+	os.mkdir(path)
 
 # These are sub data sets of folder, 
 # for my faces I've used my name you can 
@@ -25,7 +28,7 @@ if not os.path.isdir(path):
 # if you've any other camera 
 # attached use '1' like this 
 face_cascade = cv2.CascadeClassifier(haar_file) 
-webcam = cv2.VideoCapture(1) 
+webcam = cv2.VideoCapture(0) 
 
 # The program loops until it has 30 images of the face. 
 count = 0
